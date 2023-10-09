@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Popup Example</title>
+  <style>
+    .popup {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      display: none;
+    }
+    
+    .popup.active {
+      display: block;
+    }
+    
+    .popup button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #ff9800;
+      border: none;
+      color: #fff;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .popup-button {
+      text-align: center;
+      margin-top: 20px;
+    }
+  </style>
+  <script>
+    function showPopup(popupId) {
+      document.getElementById(popupId).classList.add('active');
+    }
+  </script>
+</head>
+<body>
+  <div class="popup-button">
+    <button onclick="showPopup('popup1')">Open Popup</button>
+  </div>
+
+  <div class="popup" id="popup1">
+    <h2>Popup Message</h2>
+    <p>This is a popup message.</p>
+    <button onclick="showPopup('popup2')">Open Another Popup</button>
+  </div>
+
+  <div class="popup" id="popup2">
+    <h2>Another Popup Message</h2>
+    <p>This is another popup message.</p>
+    <button onclick="showPopup('popup1')">Go Back to First Popup</button>
+  </div>
+</body>
+</html>

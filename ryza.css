@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+
+    background: url('enhypen.jpg');
+    background-position: center;
+    background-size: cover;
+  }
+
+  .show-btn{
+    background: #fff;
+    padding: 10px 20px;
+    margin-top: 28pc;
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  }
+
+  .show-btn, .container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  input[type="checkbox"]{
+    display: none;
+  }
+
+  .text{
+    font-size: 15;
+    color: darkred;
+  }
+
+  .loginbtn{
+    height: 5pc;
+    width: 10pc; 
+  }
+
+  .container{
+    display: none;
+    margin-left: 40px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+
+    background: transparent;
+    backdrop-filter: blur(15px);
+  }
+  #show:checked ~ .container{
+    display: block;
+  }
+  .container .close-btn{
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  .container .close-btn:hover{
+    color: #3498db;
+  }
+  .container .text{
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+  }
+  .container form{
+    margin-top: -20px;
+  }
+  .container form .data{
+    height: 45px;
+    width: 100%;
+    margin: 40px 0;
+  }
+
+h2{
+    font-size: 2em;
+    color: black;
+    text-align: center;
+}
+
+.inputbox{
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid black;
+}
+
+.greet{
+    padding-top: 15%;
+}
+
+.msgforu{
+    font-weight: bold;
+    color: #fff;
+}
+
+.msginside{
+    padding-top: 6%;
+    color: #fff;
+}
+
+.inputbox label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: black;
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
+}
+input:focus ~ label,
+input:valid ~ label{
+top: -5px;
+}
+.inputbox input {
+    width: 20%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding:0 35px 0 5px;
+    color: black;
+}
+.inputbox ion-icon{
+    position: absolute;
+    right: 8px;
+    color: black;
+    font-size: 1.2em;
+    top: 20px;
+}
+
+
+.loginbtn {
+  font-size: 1em;
+  font-weight: 500;
+  color: #fff;
+
+  margin-top: 50px;
+  width: 70%;
+  height: 40px;
+  margin-left: 3pc;
+  cursor: pointer;
+  border-radius: 8px;
+  border: 2px solid white;
+  outline: none;
+  box-shadow: 0 0 40px (#7d2ae8);
+  background-color: #7d2ae8;
+  }
+
+.cont{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  
+  background-position: center;
+  background-size: cover;
+  background: url('fk.jpg');
+}
+
+  .show-btn1{
+    background: #fff;
+    padding: 10px 20px;
+    margin-top: 17pc;
+    font-size: 14px;
+    font-weight: 500;
+    color: black;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  }
+
+  .show-btn1 .cont{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #show:checked ~ .cont{
+    display: block;
+  }
+
+  .cont .close-btn1{
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  .cont .close-btn1:hover{
+    color: #3498db;
+  }
+  .cont .text{
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+  }
+  .cont1 form{
+    margin-top: -20px;
+  }
+  .cont1 form .data{
+    height: 45px;
+    width: 100%;
+    margin: 40px 0;
+  }

@@ -1,0 +1,71 @@
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    display: none;
+    width: 400px;
+  }
+
+  body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+
+    background: url('enhypen.jpg');
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .msg{
+    padding-top: 15px;
+  }
+  
+  .popup.active {
+    display: block;
+  }
+  
+  .popup button {
+    margin-top: 10px;
+    margin-left: 80px;
+    padding: 10px 20px;
+    background-color: #ff9800;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .popup-button {
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  h3{
+    padding-left: 40px;
+  }
+
+  text{
+    color: darkred;
+    font-size: 20px;
+    font-weight: bolder;
+    padding-left: 100px;
+  }
+  
+  .image{
+    display: fill;
+    justify-content: center;
+    min-height: 100vh;
+    width: 1000px;
+    margin-right: 100px;
+    color: #fff;
+
+    background: url('fk.jpg');
+    background-position: center;
+    background-size: cover;
+  }
